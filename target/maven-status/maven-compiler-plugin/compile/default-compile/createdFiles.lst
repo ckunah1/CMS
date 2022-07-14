@@ -1,0 +1,14 @@
+com\xyz\cms\service\CustomerService.class
+com\xyz\cms\CmsApplication.class
+com\xyz\cms\controller\ProductController.class
+com\xyz\cms\model\CustomerProduct.class
+com\xyz\cms\model\Transaction.class
+com\xyz\cms\model\Product.class
+com\xyz\cms\exception\CMSException.class
+com\xyz\cms\controller\CustomerProductController.class
+com\xyz\cms\service\CustomerProductService.class
+com\xyz\cms\model\Customer.class
+com\xyz\cms\repository\CustomerRepository.class
+com\xyz\cms\controller\CustomerController.class
+com\xyz\cms\model\Returns.class
+com\xyz\cms\service\ProductService.class

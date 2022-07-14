@@ -1,0 +1,14 @@
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\controller\ProductController.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\model\Transaction.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\model\CustomerProduct.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\model\Customer.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\repository\CustomerRepository.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\exception\CMSException.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\model\Returns.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\model\Product.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\service\CustomerProductService.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\CmsApplication.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\controller\CustomerController.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\controller\CustomerProductController.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\service\ProductService.java
+C:\Work\workspace\cms\src\main\java\com\xyz\cms\service\CustomerService.java
