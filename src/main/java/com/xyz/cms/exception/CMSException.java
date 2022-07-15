@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class CMSException extends Exception {
+public class CMSException extends RuntimeException {
 	/**
 	 * 
 	 */

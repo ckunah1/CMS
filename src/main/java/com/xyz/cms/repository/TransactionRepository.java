@@ -9,7 +9,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.xyz.cms.model.Transaction;
 
 public interface TransactionRepository extends JpaRepository<Transaction, Integer> {
-	public Optional<Transaction> findByCustomerIdAndProductIdAndDateSerialAndDepositDate(int customerId, int productId, int dateSerial, Date depositDate);
-	
+	public Optional<Transaction> findByCustomerIdAndProductIdAndDateSerialAndDepositDate(int customerId, int productId,
+			int dateSerial, Date depositDate);
+
+	public List<Transaction> findByCustomerIdAndProductId(int customerId, int productId);
+
 	public List<Transaction> findByDepositDate(Date depositDate);
 }

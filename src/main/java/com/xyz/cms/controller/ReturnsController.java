@@ -22,14 +22,18 @@ public class ReturnsController {
 	ObjectMapper objMapper = new ObjectMapper();
 	
 	@GetMapping("/get")
-	public String getReturn(@RequestBody Returns obj) throws JsonProcessingException {
+	public Returns getReturn(@RequestBody Returns obj) throws JsonProcessingException {
+		//Returns temp = 
+				return returnsService.getReturnTransaction(obj);
+		
+	/*	
 		try {
-			Returns temp = returnsService.getReturnTransaction(obj);
 			
 			return objMapper.writeValueAsString(temp);
 		} catch (CMSException e) {
 			return e.toString();
 		}
+		*/
 	}
 	
 	@PostMapping("/make")

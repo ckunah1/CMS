@@ -1,11 +1,13 @@
 package com.xyz.cms.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -29,7 +31,9 @@ public class TransactionController {
 			//test getTransaction
 			transactionObj = transactionService.getTransaction(transaction.getCustomerId(), transaction.getProductId(), transaction.getDateSerial(), transaction.getDepositDate());
 		} catch (CMSException e) {
-			return e.getErrorCode() + e.getErrorMessage();
+			throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getErrorMessage());
+			
+			//return e.getErrorCode() + e.getErrorMessage();
 		}
 		
 		return objMapper.writeValueAsString(transactionObj);

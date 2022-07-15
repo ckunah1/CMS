@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.xyz.cms.model.Returns;
 import com.xyz.cms.model.Transaction;
+import com.xyz.cms.service.OtherService;
 import com.xyz.cms.service.ReturnsService;
 import com.xyz.cms.service.TransactionService;
 
@@ -15,14 +16,11 @@ import com.xyz.cms.service.TransactionService;
 @RequestMapping("/other")
 public class OtherController {
 	@Autowired
-	private ReturnsService returnsService;
-	
-	@Autowired
-	private TransactionService transactionService;
+	private OtherService otherService;
 	
 	@GetMapping("/owed")
-	public String getMapping (@RequestBody Returns objReturn, Transaction objTransaction) {
-		returnsService.
+	public int getMapping (@RequestBody Transaction objTransaction) {
+		return otherService.getAmountPosted(objTransaction);
 	}
 	
 }

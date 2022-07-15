@@ -8,4 +8,6 @@ import com.xyz.cms.model.CustomerProduct;
 
 public interface CustomerProductRepository extends JpaRepository<CustomerProduct, Integer>{
 	public List<CustomerProduct> findByCustomerId(int customerId);
+
+	public List<CustomerProduct> findByCustomerIdAndProductId(int customerId, int productId);
 }
